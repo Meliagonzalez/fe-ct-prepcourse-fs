@@ -163,7 +163,7 @@ function esPrimo(num) {
    // Tu código:
    if (num < 0 || num === 0 || num === 1){
       return false
-   }  for (var i = 2 ; i < num; i ++){
+   }  for (let i = 2 ; i < num; i ++){
          if (num % i === 0) {
             return false
          }
@@ -200,7 +200,7 @@ function doWhile(num) {
    var limite = 8;
    do {
       num = num + 5;
-      limite=limite-1
+      limite=limite - 1;
    }  while (limite > 0);
    return num;
 }
